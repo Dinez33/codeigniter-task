@@ -50,7 +50,7 @@ class Admin extends CI_Controller {
 				$_SESSION['user_id'] = $data['id'];
 				// print_r($_SESSION['user_id']);
 				// exit();
-				if($_SESSION['user_role']==1){
+				if($_SESSION['user_role']==1){ 
 					redirect('admin/Questions','refresh');
 				}else{
 					redirect('admin/userdash','refresh');
